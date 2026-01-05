@@ -1,10 +1,6 @@
 <?php
-    session_start();
-    if(isset($_COOKIE['status']) !== true){
-        header('location: Logincheck.php');
-    }
+   require_once('../Controllers/Authenticationcheck.php');
 ?>
-
 <html>
 <head>
     <title>Lost and Found Page</title>
@@ -33,10 +29,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <img src="AIUB Logo.png" width="100">
+    <img src="../Assests/AIUB_Logo.png" width="100">
     <h1>Welcome to Lost and Found</h1>
     <h3>Please select what you would like to do:</h3>
-    <form action="LostItem.php" method="post">
+    <form>
         <input type="button" id="infobtn" value="Report a Lost Item" onclick="window.location.href='Reportlostitem.php'">
         <input type="button" id="searchbtn" value="Search for a Lost Item" onclick="window.location.href='Searchlostitem.php'">
     </form>

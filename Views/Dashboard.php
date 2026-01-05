@@ -1,8 +1,5 @@
 <?php
-    session_start();
-    if(isset($_COOKIE['status']) !== true){
-        header('location: Logincheck.php');
-    }
+   require_once('../Controllers/Authenticationcheck.php');
 ?>
 
 <html>
@@ -39,7 +36,7 @@
 </head>
 <body>
     <div class="logo">
-    <img src="AIUB Logo.png" width="100">
+    <img src="../Assests/AIUB_Logo.png" width="100">
     <h2>Welcome to Dashboard</h2>
     </div>
     <nav>
@@ -91,6 +88,6 @@
         <p>Ka-66/1, Kuratoli Road, Kuril, Khilkhet, Dhaka 1229, Bangladesh</p>
         <p>Hotline: 01844115004</p>
     </footer>
-    <a href="Logout.php">Logout</a>
+    <a href="../Controllers/Logout.php">Logout</a>
 </body>
 </html>
