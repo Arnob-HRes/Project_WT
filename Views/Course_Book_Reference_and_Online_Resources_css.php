@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<style>
 header{
     position: relative;
     width: 1518px;
@@ -41,7 +44,7 @@ header{
     top: 290px;
     color: white;
     font-size: 48px;
-    left: 450px;
+    left: 160px;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -147,14 +150,8 @@ header{
     border: 1px solid blue;
     animation: appear-bottom 1.5s ease-out forwards;
 }
-#I2{
+#I1{
     width: 1250px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#I3{
-    width: 1270px;
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid white;
     border-radius: 10px;
@@ -170,9 +167,16 @@ header{
     cursor: pointer;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+#Valid{
+  margin: 10px;
+    height: 30px;
+    color: red;
+}
 #IB1:hover{
     background-color: transparent;
     backdrop-filter: blur(24px);
     color: white;
     border: 1px solid white;
 }
+</style>
+</html>

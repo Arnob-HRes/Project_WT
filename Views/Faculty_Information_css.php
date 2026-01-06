@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<style>
 header{
     position: relative;
     width: 1518px;
@@ -94,6 +97,13 @@ header{
     border-radius: 50px;
     margin-bottom: 30px;
 }
+#Valid{
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+    color: red;
+    margin-bottom: 30px;
+}
 #sub{
     width: 450px;
     height: 30px;
@@ -160,3 +170,5 @@ header{
     font-size: 20px;
     color: white;
 }
+</style>
+</html>

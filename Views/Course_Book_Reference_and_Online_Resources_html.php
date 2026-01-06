@@ -1,3 +1,7 @@
+<?php
+require_once("Course_Book_Reference_and_Online_Resources_css.php");
+require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -15,14 +19,14 @@
     </head>
     <body>
         <header>
-            <img src="../Image/AIUB Logo.png" alt="AIUB Logo" id="logo">
-            <img src="../Image/aiub_200X70.png" alt="Portal" id="Portal">
+            <img src="../Assests/AIUB_Logo.png" alt="AIUB Logo" id="logo">
+            <img src="../Assests/aiub_200X70.png" alt="Portal" id="Portal">
             <button id="B1" onclick="window.location.href='Class_Routine_and_Upcoming_Registration_Course_Generator.html'">Faculty Information</button>
             <a href="" id="a1">Settings</a>
             <a href="" id="a2">Notification</a>
             <a href="" id="a3">Logout</a>
         </header>
-        <img src="../Image/new_campus_pic_7.jpg" alt="Background" id="BackImg">
+        <img src="../Assests/new_campus_pic_7.jpg" alt="Background" id="BackImg">
         <h1 id="Title1">WELCOME TO</h1>
         <h1 id="Title2">Course Book Reference and Online Resources</h1>
         <form method="post" id="f1">
@@ -30,6 +34,7 @@
                 Course Name:
                 <input type="text" name="credit" id="I1">
             </div>
+            <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
             <input type="submit" id="IB1">
         </form>
         <script src="../JS/Course_Book_Reference_and_Online_Resources_Valid.js"></script>

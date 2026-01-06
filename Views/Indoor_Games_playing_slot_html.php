@@ -1,3 +1,7 @@
+<?php
+require_once("Indoor_Games_playing_slot_css.php");
+require_once("../Controllers/Indoor_Games_playing_slot_Valid.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -15,14 +19,14 @@
     </head>
     <body>
         <header>
-            <img src="../Image/AIUB Logo.png" alt="AIUB Logo" id="logo">
-            <img src="../Image/aiub_200X70.png" alt="Portal" id="Portal">
+            <img src="../Assests/AIUB Logo.png" alt="AIUB Logo" id="logo">
+            <img src="../Assests/aiub_200X70.png" alt="Portal" id="Portal">
             <button id="B1" onclick="window.location.href='Course_Book_Reference_and_Online_Resources.html'">Faculty Information</button>
             <a href="" id="a1">Settings</a>
             <a href="" id="a2">Notification</a>
             <a href="" id="a3">Logout</a>
         </header>
-        <img src="../Image/new_campus_pic_7.jpg" alt="Background" id="BackImg">
+        <img src="../Assests/new_campus_pic_7.jpg" alt="Background" id="BackImg">
         <h1 id="Title1">WELCOME TO</h1>
         <h1 id="Title2">Indoor Games playing slot</h1>
         <form method="post" id="f1">

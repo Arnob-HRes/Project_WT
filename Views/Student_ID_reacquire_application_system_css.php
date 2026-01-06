@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<style>
 header{
     position: relative;
     width: 1518px;
@@ -170,9 +173,18 @@ header{
     cursor: pointer;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+#Valid{
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+    color: red;
+    margin-bottom: 30px;
+}
 #IB1:hover{
     background-color: transparent;
     backdrop-filter: blur(24px);
     color: white;
     border: 1px solid white;
 }
+</style>
+</html>

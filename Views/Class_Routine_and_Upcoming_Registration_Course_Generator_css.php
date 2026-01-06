@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <style>
 header{
     position: relative;
@@ -21,7 +23,7 @@ header{
     top: 0px;
     left: 0px;
     width: 1536px;
-    height: 728px;
+    height: 800px;
     z-index: -1;
 }
 #Title1{
@@ -177,6 +179,12 @@ header{
     cursor: pointer;
     animation: appear-bottom 1.5s ease-out forwards;
 }
+#Valid{
+  font-size: 20px;
+  margin: 10px;
+    height: 30px;
+  color: red;
+}
 #IB1:hover{
     background-color: transparent;
     backdrop-filter: blur(24px);
@@ -184,3 +192,4 @@ header{
     border: 1px solid white;
 }
 </style>
+</html>

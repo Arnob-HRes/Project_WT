@@ -1,3 +1,7 @@
+<?php
+require_once("Faculty_Information_css.php");
+require_once("../Controllers/Faculty_Information_Valid.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -15,18 +19,18 @@
     </head>
     <body>
         <header>
-            <img src="../Image/AIUB Logo.png" alt="AIUB Logo" id="logo">
-            <img src="../Image/aiub_200X70.png" alt="Portal" id="Portal">
+            <img src="../Assests/AIUB Logo.png" alt="AIUB Logo" id="logo">
+            <img src="../Assests/aiub_200X70.png" alt="Portal" id="Portal">
             <button id="B1">Home Page</button>
             <a href="" id="a1">Settings</a>
             <a href="" id="a2">Notification</a>
             <a href="" id="a3">Logout</a>
         </header>
-        <img src="../Image/image.jpg" alt="Background" id="BackImg">
+        <img src="../Assests/image.jpg" alt="Background" id="BackImg">
         <h1 id="Title1">WELCOME TO FACULTY INFORMATION PAGE</h1>
         <form method="post" id="F1">
             <center><h1>Faculty Information</h1>
-            <input type="text" placeholder="Input Faculty Name" id="Input1">
+            <input type="text" placeholder="Input Faculty Name" id="Input1" name="name">
             <select name="S1" id="Input2" required>
                 <option value="" disabled selected hidden>Select a department</option>
                 <option value="CSE">Computer Science and Engineering</option>
@@ -36,6 +40,7 @@
             </select>
             <input type="submit" value="Search" id="sub">
             </center>
+            <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
         </form>
         <script src="../JS/Faculty_Information_Valid.js"></script>
     </body>

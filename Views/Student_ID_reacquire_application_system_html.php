@@ -1,3 +1,7 @@
+<?php
+require_once("Student_ID_reacquire_application_system_css.php");
+require_once("../Controllers/Student_ID_reacquire_application_system_Valid.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -15,26 +19,27 @@
     </head>
     <body>
         <header>
-            <img src="../Image/AIUB Logo.png" alt="AIUB Logo" id="logo">
-            <img src="../Image/aiub_200X70.png" alt="Portal" id="Portal">
+            <img src="../Assests/AIUB Logo.png" alt="AIUB Logo" id="logo">
+            <img src="../Assests/aiub_200X70.png" alt="Portal" id="Portal">
             <button id="B1" onclick="window.location.href='Indoor_Games_playing_slot.html'">Indoor Games</button>
             <a href="" id="a1">Settings</a>
             <a href="" id="a2">Notification</a>
             <a href="" id="a3">Logout</a>
         </header>
-        <img src="../Image/new_campus_pic_7.jpg" alt="Background" id="BackImg">
+        <img src="../Assests/new_campus_pic_7.jpg" alt="Background" id="BackImg">
         <h1 id="Title1">WELCOME TO</h1>
         <h1 id="Title2">Student ID reacquire application system</h1>
         <form method="post" id="f1">
             <div class="div">
                 Department:
-                <input type="text" name="credit" id="I1">
+                <input type="text" name="credit" id="I1" name="department">
             </div>
             <div class="div">
                 Date of pick up:
-                <input type="date" name="date" id="I2">
+                <input type="date" name="date" id="I2" name="date">
             </div>
             <input type="submit" id="IB1">
+            <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
         </form>
         <script src="../JS/Student_ID_reacquire_application_system_Valid.js"></script>
     </body>
