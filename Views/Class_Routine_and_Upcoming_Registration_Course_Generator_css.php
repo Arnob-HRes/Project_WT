@@ -1,3 +1,4 @@
+<style>
 header{
     position: relative;
     width: 1518px;
@@ -182,3 +183,4 @@ header{
     color: white;
     border: 1px solid white;
 }
+</style>

@@ -1,3 +1,6 @@
+<?php
+require_once("Class_Routine_and_Upcoming_Registration_Course_Generator_css.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -10,8 +13,6 @@
         <meta name="keywords" content="Project, WT, JS, CSS, HTML, AIUB, CSE, Web Technology">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="1800">
-
-        <link rel="stylesheet" href="../CSS/Class_Routine_and_Upcoming_Registration_Course_Generator.css">
     </head>
     <body>
         <header>
