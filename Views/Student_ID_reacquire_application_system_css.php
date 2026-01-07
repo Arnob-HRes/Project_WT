@@ -180,6 +180,13 @@ header{
     color: red;
     margin-bottom: 30px;
 }
+#result{
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+    color: red;
+    margin-bottom: 30px;
+}
 #IB1:hover{
     background-color: transparent;
     backdrop-filter: blur(24px);

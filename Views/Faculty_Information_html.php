@@ -30,7 +30,7 @@ require_once("../Controllers/Faculty_Information_Valid.php")
         <h1 id="Title1">WELCOME TO FACULTY INFORMATION PAGE</h1>
         <form method="post" id="F1">
             <center><h1>Faculty Information</h1>
-            <input type="text" placeholder="Input Faculty Name" id="Input1" name="name">
+            <input type="text" placeholder="Input Faculty ID" id="Input1" name="fid">
             <select name="S1" id="Input2" required>
                 <option value="" disabled selected hidden>Select a department</option>
                 <option value="CSE">Computer Science and Engineering</option>
@@ -42,6 +42,10 @@ require_once("../Controllers/Faculty_Information_Valid.php")
             </center>
             <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
         </form>
-        <script src="../JS/Faculty_Information_Valid.js"></script>
+        <?php
+        if($massage2=="successful"){
+        }
+        ?>
+        <script src="../Controllers/Faculty_Information_Valid_js.php"></script>
     </body>
 </html>

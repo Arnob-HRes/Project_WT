@@ -1,21 +1,26 @@
 <?php
 require_once("Authenticationcheck.php");
+require_once("../Models/faculty_information_check.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $name=$_POST["name"];
+    $fid=$_POST["fid"];
     $department=$_POST["S1"];
     
-    if($name=="" && $department==""){
+    if($fid=="" && $department==""){
         $massage="Fill every box";
     }
-    else if($name=="" ){
+    else if($fid=="" ){
         $massage="Fill name";
     }
     else if($department=="" ){
         $massage="Fill department";
     }
     else{
-        $massage="Submited";
+        $faculty=['facultyID'=>$fid,'department'=>$department];
+        $status=facultycheck($faculty);
+        if($status){
+            $massage2="successful";
+        }
     }
 }
 ?>

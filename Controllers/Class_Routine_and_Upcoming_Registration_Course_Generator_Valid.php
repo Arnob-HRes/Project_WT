@@ -1,5 +1,6 @@
 <?php
 require_once("Authenticationcheck.php");
+require_once("../Models/class_routine_and_course_generator_check.php");
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $credit=$_POST["credit"];
@@ -28,7 +29,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $massage="Fill depertment";
     }
     else{
-        $massage="Submited";
+        $class=['ID'=>$id, 'department'=>$department];
+        $status=classcheck($class);
+        if($status){
+            $massage2="successful";
+        }
     }
 }
 ?>

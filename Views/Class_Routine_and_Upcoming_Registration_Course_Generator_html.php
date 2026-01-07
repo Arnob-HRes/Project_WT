@@ -51,5 +51,9 @@ require_once("../Controllers/Class_Routine_and_Upcoming_Registration_Course_Gene
             </center>
                 <input type="submit" id="IB1">
         </form>
+        <?php
+        if($massage2=="successful"){
+        }
+        ?>
     </body>
 </html>

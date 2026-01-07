@@ -137,6 +137,20 @@ header{
     width: auto;
     height: auto;
 }
+#Valid{
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+    color: red;
+    margin-bottom: 30px;
+}
+#result{
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+    color: red;
+    margin-bottom: 30px;
+}
 .div{
     font-size: 20px;
     margin: 10px;

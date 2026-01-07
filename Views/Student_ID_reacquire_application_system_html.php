@@ -32,14 +32,15 @@ require_once("../Controllers/Student_ID_reacquire_application_system_Valid.php")
         <form method="post" id="f1">
             <div class="div">
                 Department:
-                <input type="text" name="credit" id="I1" name="department">
+                <input type="text" name="department" id="I1">
             </div>
             <div class="div">
                 Date of pick up:
-                <input type="date" name="date" id="I2" name="date">
+                <input type="date" name="date" id="I2">
             </div>
             <input type="submit" id="IB1">
             <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
+            <center><p id="result"><?php if(isset($massage2)){echo $massage2;}?></p></center>
         </form>
         <script src="../JS/Student_ID_reacquire_application_system_Valid.js"></script>
     </body>

@@ -51,7 +51,10 @@ require_once("../Controllers/Indoor_Games_playing_slot_Valid.php")
                 </select>
             </div>
                 <input type="submit" id="IB1">
+            <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
+            <center><p id="result"><?php if(isset($massage2)){echo $massage2;}?></p></center>
         </form>
+
         <script src="../JS/Indoor_Games_playing_slot_Valid.js"></script>
     </body>
 </html>

@@ -32,11 +32,15 @@ require_once("../Controllers/Course_Book_Reference_and_Online_Resources_Valid.ph
         <form method="post" id="f1">
             <div class="div">
                 Course Name:
-                <input type="text" name="credit" id="I1">
+                <input type="text" name="course" id="I1">
             </div>
             <center><p id="Valid"><?php if(isset($massage)){echo $massage;}?></p></center>
             <input type="submit" id="IB1">
         </form>
+        <?php
+        if($massage2=="successful"){
+        }
+        ?>
         <script src="../JS/Course_Book_Reference_and_Online_Resources_Valid.js"></script>
     </body>
 </html>
